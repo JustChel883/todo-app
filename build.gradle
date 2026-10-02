@@ -6,9 +6,12 @@ plugins {
 
 group = 'org.example'
 version = findProperty('version') ?: '0.1.0'
-sourceCompatibility = '23'
-targetCompatibility = '23'
 mainClassName = 'org.example.TodoApp'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_23
+    targetCompatibility = JavaVersion.VERSION_23
+}
 
 repositories {
     mavenCentral()
