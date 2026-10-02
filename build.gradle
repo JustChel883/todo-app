@@ -6,11 +6,14 @@ plugins {
 
 group = 'org.example'
 version = findProperty('version') ?: '0.1.0'
-mainClassName = 'org.example.TodoApp'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_23
     targetCompatibility = JavaVersion.VERSION_23
+}
+
+application {
+    mainClass = 'org.example.TodoApp'
 }
 
 repositories {
